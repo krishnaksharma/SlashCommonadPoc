@@ -1,0 +1,7 @@
+{
+  "mattermostCommandToken": "9gdq8pr44bgtuctuzuyuhd6yfc",
+  "host": "synerziphrms-staging.cz2vgrvju9ro.us-west-2.rds.amazonaws.com",
+  "user": "hrms",
+  "password": "u$PgHx#2cJSoN",
+  "database": "new_synerziphrms_staging"
+}

@@ -1,0 +1,23 @@
+service: slash-command-handler
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: us-east-1
+
+functions:
+  interviewee:
+    handler: module/hrms/hrmsHandler.interviewee
+    description: Handler to provide the list of interviewee for the given date
+    events:
+      - http:
+          path: interviewee
+          method: POST
+  weather:
+    handler: module/weather/handler.weather
+    description: Handler to provide weather report from the city
+    events:
+      - http:
+          path: weather
+          method: POST
