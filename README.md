@@ -9,7 +9,8 @@ Here is the list of custom slash commands
 ### Tech
 slash-command-poc uses a number of open source projects to work properly:
 
-* [node.js](https://nodejs.org/) - evented I/O for the backend
+* [Node.js](https://nodejs.org/) - evented I/O for the backend
+* [MySQL](https://www.mysql.com/) - relational database management system
 
 ### Installation
 
@@ -18,9 +19,11 @@ slash-command-poc requires [Node.js](https://nodejs.org/) v6+ to run.
 Install the dependencies and deploy the project using serverless.
 
 ```sh
-$ cd Custom-slack-commands-poc
+$ cd slash-command-poc
 $ npm install 
 $ serverless deploy
 ```
+
 Contact me at krishna.sharma@synerzip.com for any queries.
+
 Thanks!
