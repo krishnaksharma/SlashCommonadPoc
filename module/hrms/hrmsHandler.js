@@ -6,8 +6,8 @@ const debug = require('debug')('hrmsHandler');
 debug.enabled = true;
 module.exports.interviewee = (event, context, callback) => {
     const body = queryString.parse(event.body);
-    debug(event);
-    debug(body);
+    debug("Event", event);
+    debug("Body", body);
     var username = body.username ? body.username.trim() : null;
     var date = body.text ? body.text.trim() : null;
     var isMattermostCommand = body.token === config.mattermostCommandToken;
@@ -41,7 +41,7 @@ module.exports.interviewee = (event, context, callback) => {
 };
 
 function createLambdaResponseCard(response) {
-    return  {
+    return {
         "statusCode": 200,
         "body": JSON.stringify(response)
     };
